@@ -1,0 +1,58 @@
+<html 
+     tal:define="denied     view.accessdenied;
+                 wrong      view.wrong;
+     
+                                                ">
+<head>
+<title>AdminPanel</title>
+<body>
+<h1>Admin Login</h1>
+
+
+
+
+<table border="1" cellspacing="1" cellpadding="20">
+<tr>
+<td>
+<form>
+
+
+<table>
+    <tr>
+        <td>
+        <div align="center">
+        username:&nbsp <input type="text" name="username" /> 
+        </div></td>
+    </tr>
+    <span tal:condition="wrong">
+    <p><font color="red">Username and/or password are wrong! </font></p>
+    </span>
+    <tr>
+        <td>
+        <div align="center">
+        password:&nbsp <input type="password" name="pw" />
+        </div></td>
+    </tr>  
+    <tr>
+        <td>
+            <div align="center">
+            &nbsp<input type="submit" name="send"
+            value="login" onclick="">
+            </div>
+            </td>
+  </tr>
+  </table>
+  
+  </form>
+  </td>
+  </tr>
+  </table>
+  
+  
+<span tal:condition="denied" >
+<h2>Too many attempts: Access denied!</h2>
+</span> 
+  
+</body>
+</head>
+</html>

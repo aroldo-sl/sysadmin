@@ -1,0 +1,96 @@
+.. file:  about-python.txt
+
+.. date:  2012-03-18
+
+.. author: Aroldo Souza-Leite
+
+About Python
+============
+
+Nutzungsrecht
+-------------
+
+Eigentümerin ist die `Python Foundation`_, eine gemeinützige US-Amerikanische
+Stiftung. Der einzige Zweck der Stiftung ist die Programmiersprache weiter zu 
+entwickeln und zu garantieren, dass sie allen lizenzfrei zur Verfügung steht.
+
+
+Python wird durch eine aktive Community entwickelt. Ihr Erfinder, Guido van Rossum, ist seit 1980 ihr Chefentwickler. 
+
+Siehe auch den `Wikipedia Eintrag zu Python`_ 
+
+:doc:`top <about-python>`
+
+Sprachdefinition
+----------------
+
+
+- interpretierte Programmiersprache: gleichzeitig 
+  'Skriptsprache' und objektorientierte 'Allzecksprache'
+
+- ist objektoriertiert
+
+
+:doc:`top <about-python>`
+
+Interpreter
+-----------
+
+- die Sprachdefinition ist unabhängig  von der Interpreter-Definition
+
+
+.. note:: die **Einrückung** (indentation) im Python-Code
+
+   Python fäll als erstes dadurch auf, dass die Code-Organisation in Blöcken
+   (indentation) nicht, wie in vielen Programmiersprachen, 
+   nur ein guter Programmierstil ist, sondern eine **syntaktische Vorgabe**.
+
+
+-  Verschiedene Interpreter: 
+ 
+         - CPython (offiziell)
+         - PyPy_ 
+         - Jython (für die JVM)
+         - IronPython (für .NET)
+
+:doc:`top <about-python>`
+
+Performance
+-----------
+
+    CPython ist insgesamt langsam, aber Python-Code ist sehr gut optimierbar 
+    durch die traditionell extreme C-Kompatibilität von CPython. 
+
+    PyPy_ ist sehr schnell. 
+
+    Ein Compiler (Nuitka_) wird
+    zur Zeit auch entwickelt.
+
+:doc:`top <about-python>`
+
+Verbreitung
+-----------
+
+In sehr unterschiedlichen Bereichen:
+
+  - OS-Systemverwaltung (Skripte)
+  - Automation (Bindung an C-Bibliotheken)
+  - Web-Frameworks
+  - XML-Verarbeitung
+  - Datenbank (SQL-)- Anbindung
+  - Python ist inzwischen eine der Grundlagen von vielen Linux-Distribuitionen
+    und Linux-GUIs (Debian, Gnome, KDE)
+
+:doc:`top <about-python>`
+
+ 
+.. _Python Foundation: http://www.python.org
+ 
+.. _Wikipedia Eintrag zu Python: http://en.wikipedia.org/wiki/Python_%28programming_language%29
+
+.. _Nuitka: http://nuitka.net/blog/nuitka-a-python-compiler/
+
+.. _PyPy: http://pypy.org
+
+
+

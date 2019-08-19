@@ -1,0 +1,23 @@
+
+Some notes taken at Plato Lübeck
+=======================================================
+
+
+A simple function
+---------------------
+
+This is a Function written in Lübeck:
+
+.. autofunction:: examples.m04_simple_examples.hello_luebeck
+
+
+Documenting small tests
+----------------------------
+
+This is the Test on `hello_luebeck` I ran in the Idle console:
+
+>>> hello_luebeck()
+'Hallo aus Luebeck!!'
+
+
+:doc:`top<rst-template>`

@@ -1,0 +1,102 @@
+.. file:  control-structures.txt
+
+.. date:  2012-03-19
+
+.. author: Aroldo Souza-Leite
+
+
+Kontrollstrukturen
+==================
+
+`while` Schleife
+----------------
+
+Endlos
+~~~~~~
+
+Die Überprüfung im Kopf diese Schleife hat immer ein positives Ergebnis:
+
+
+.. code-block:: python
+
+   from __future__ import print_function
+
+   while True:
+      s = raw_input('Ihr Passwort bitte:')
+      if not s=='currywurst':
+	 continue
+      else:
+	  break
+
+:doc:`top<control-structures>`
+
+Fußgesteuert
+~~~~~~~~~~~~
+
+
+Mindestens einmal läuft der Anfang der Schleife.
+
+.. code-block:: python
+
+   from __future__ import print_function
+
+   s = None
+   noch_einmal = True   
+   while noch_einmal:
+      s = raw_input('Ihr Passwort bitte:')
+      print('guter Versuch!')
+      noch_einmal = (not s=='currywurst')
+   print(s)
+
+:doc:`top<control-structures>`
+
+
+Kopfgesteuert
+~~~~~~~~~~~~~
+
+.. admonition:: Übung
+
+   Schreiben Sie die obige Schleife kopfgesteuert.
+
+   .. tip:: Vorbelegung der Variablen ``s`` mit 'pommes' und
+            Überprüfung des Wertes von ``s`` am Kopf der Schleife.
+
+:doc:`top<control-structures>`
+
+
+``if`, ``elif`, ``else``
+------------------------
+
+
+Die Struktur eines if-elif-else-Blocks:
+
+
+.. code-block:: python
+
+   from __future__ import print_function
+
+   # bool1 = True
+   # bool2 = False
+   # bool3 = True
+   # boo4  = True
+
+   if bool1:
+      print ('1 gewonnen')
+   elif bool2:
+      print ('2 gewonnen)
+   elif bool3:
+      print ('3 gewonnen)
+   else:
+      print('niemand gewonnen')
+
+
+.. admonition:: Übung
+
+   Eine Funktion mit 3 (str) - Parametern, die überprüft, ob einer der Parameter
+   Länge mindestens 4 hat, und druckt diesen Parameter in großen Buchstaben aus.
+   Benutzen Sie die Eingebaute Funktion :py:func:`len`
+
+:doc:`top<control-structures>`
+
+
+

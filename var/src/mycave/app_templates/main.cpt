@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" 
+      tal:define="section view.section;
+                  global set_title string:main view">
+<head>
+  <title>
+   <span tal:replace="set_title"/>
+  </title>
+</head>
+<body>
+<div id="container">
+    <div id="header"  tal:content="structure provider:head">
+        
+       
+    </div> 
+    <div id="mainnavbox"></div>
+   
+    <div id="mainnav" tal:content="structure provider:mainnav">
+    </div> 
+ <div id="markerpos"></div>
+
+     <div id="menu" tal:content="structure provider:left" >
+                 
+                   </div>
+<span tal:condition="python:section=='content_s1'">
+    <div id="contents" tal:content="structure provider:content_s1">
+     
+    </div>
+</span>
+    
+<span tal:condition="python:section=='content_s2'">
+    <div id="contents" tal:content="structure provider:content_s2">
+     
+     
+    </div>
+</span>
+    
+<span tal:condition="python:section=='content_s3'">
+    <div id="contents" tal:content="structure provider:content_s3">
+     
+    </div>
+</span>
+    
+<span tal:condition="python:section=='content_s4'">
+    <div id="contents" tal:content="structure provider:content_s4">
+     
+    </div>
+</span>
+
+<div id="marker">
+</div>
+<div id="footer" tal:content="structure provider:footer" >
+    </div>
+      
+    </div>
+
+
+</body>
+</html>

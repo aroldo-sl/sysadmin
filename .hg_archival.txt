@@ -1,0 +1,5 @@
+repo: c0652380fd4b27fe22722e9b71f9797822a38df7
+node: 8f2973c34b2f7466362b51c9781d87a5da448cee
+branch: aroldo
+latesttag: null
+latesttagdistance: 48

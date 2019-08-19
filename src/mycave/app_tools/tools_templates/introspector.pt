@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"
+      tal:define="data              view/data;
+                  attributes_dict   data/attributes_dict;      
+                  attribute_keys    data/attribute_list;
+                  type_dict         data/type_dict;
+                  method_keys       data/method_list;                  
+                  path_data         view/path_data;
+                  path              view/traversal_path;">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="author" content="Thomas Kaspari" />
+    <meta name="date" content="2012-08-22" />
+    <meta name="keywords" lang="de" content="" />
+    <style type="text/css" media="screen">
+    /* <![CDATA[ */
+        html {
+            background-color: #dddddd;
+            background-repeat:repeat;
+            }
+
+        body {
+	        margin: 0;
+	        padding: 0em;
+	        color: #646464; 
+            font-family:Verdana,Helvetica,Arial,sans-serif;
+	        font-size: 14px;
+            text-align: center;
+	        background-color: #dddddd;
+            background-repeat:repeat;
+        }
+	        
+        h1  {
+        }
+        table, table .inner_table {
+            text-align: left;
+            width:90%;
+            margin-left:auto;
+            margin-right:auto;
+            border:0;
+        }
+            
+        table th {
+            background-color:#CCCCCC;
+        }
+        table td.content {
+            vertical-align:top; background-color:#CCCCCC;
+        }
+
+        table.inner_table {
+            /*border:1px solid black;*/
+            width:100%;
+        }
+            
+        table .inner_table th, .inner_table td {
+            border:1px solid gray;
+        }
+        table .inner_table th.main {
+            text-align: center;
+            padding:5px;
+        }
+
+            /* ]]> */
+    </style>
+    
+    <title>
+       LiveBase - mitcon GmbH
+    </title>
+</head>
+
+<body>
+    <h1>MyInstrospector</h1>
+    <form method="post">
+        <hr />
+        <table>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" name="return" value="return" id="" /> | 
+                    path: / 
+                    <span tal:repeat="folder path">
+                        <span tal:replace="folder" /> / 
+                    </span>
+                    
+                </td>
+            </tr>
+            <tr><th>Folder-Content</th><th>Content of object "<span tal:replace="data/attributes_dict/obj_id|string:no obj_id" />"</th></tr>
+        
+            <tr>
+                <td class="content">
+                    <span tal:condition="python:path" tal:replace="python:path[-1]" /><br/>
+                    <span tal:repeat="obj path_data">
+                        |--<input type="submit" name="choose" tal:attributes="value obj" id="" /><br/>
+                    </span>    
+                </td>
+                
+                <td>
+                    <table class="inner_table">
+                        <tr><th colspan="3" class="main">class attributes</th></tr>
+                        
+                        <tr><th>Attribute</th><th>Type</th><th>Value</th></tr>
+                        <tr tal:repeat="attribute attribute_keys">
+                            <td><b><span tal:replace="attribute" /></b></td>
+                            <td><i><span tal:replace="python:type_dict[attribute]" /></i></td>
+                            <td><i><span tal:replace="python:attributes_dict[attribute]" /></i></td>
+                        </tr>
+                        
+                        <tr><th colspan="3" class="main">class methods</th></tr>
+                        
+                        <tr><th>Attribute</th><th>Type</th><th>Value</th></tr>
+                        <tr tal:repeat="attribute method_keys">
+                            <td><b><span tal:replace="attribute" /></b></td>
+                            <td><i><span tal:replace="python:type_dict[attribute]" /></i></td>
+                            <td><i><span tal:replace="python:attributes_dict[attribute]" /></i></td>
+                        </tr>
+                        
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <hr />
+        <div class="footer">
+            by tomka 2012
+        </div>
+    </form>
+    
+
+    
+</body>
+</html>

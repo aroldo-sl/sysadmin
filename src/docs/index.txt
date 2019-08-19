@@ -1,0 +1,49 @@
+.. file:  index.txt
+
+.. Notes on Grok
+
+.. |author| replace:: mitcon gmbh Techology Concepts
+
+Python code examples
+====================
+
+- author: |author|
+- date: |today|
+
+.. toctree::
+   :numbered:
+   :maxdepth: 2
+ 
+   module-template
+   learning-python-cd5bc3b3360e-index
+   global-todo-list
+
+The  `MyCave`  Project
+======================
+
+This section is here only to include `Grok` in the documentation. 
+It is not relevant for Python beginners.
+
+`MyCave` is an example `Grok` project. It is included in this lb work directory skeleton because LiveBase project often start from the `Grok` buildout. In the future (from 2013-03-03 on) the structure of this skeleton itself should make it clear that the egg named `MyCave` and corresponding names in this skeleton are just  placeholders for the names appearing in another `Grok` based project.
+
+.. toctree::
+   :numbered:
+   :maxdepth: 2
+
+   Doctest in `Grok` <app>
+
+Indices and table
+=================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+
+
+
+
+   
+
+
+
+

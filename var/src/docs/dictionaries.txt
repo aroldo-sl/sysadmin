@@ -1,0 +1,92 @@
+.. file:  dictionaries.txt
+
+.. date:  2012-03-19
+
+.. author: Aroldo Souza-Leite
+
+
+Dictionaries
+============
+
+Mapping
+-------
+
+Ein Mappping ist eine (logische) Key-Value Zuordnung. 
+
+
+.. code-block:: python
+
+   # z.B. diese  Tupel von Wertepaaren ist ein Mapping 
+   m = (('Anne', 28), ('Joseph', 40), ('Anton', 72), ('Berta', 60))
+   # aus einem Mapping kann mit `dict` ein Dictionary entstehen.
+   d = dict(m) # Ab jetzt mann ein Element durch den Schlüssel erreichen
+   d['Joseph'] = d['Joseph'] + 1 # überschreibt das Alter von 'Joseph'
+
+
+:doc:`top<dictionaries>`
+
+
+Verschachtelung
+---------------
+
+Oft sind Dictionaries und Liste verschachtelt. Hier ein Beispiel aus itmaybeahack_ 
+
+
+
+
+.. code-block:: python
+
+   diceRoll = { (1,1): "snake eyes", (6,6): "box cars" }
+   myBoat = { "NAME":"KaDiMa", "LOA":18, "SAILS":["main","jib","spinnaker"] }
+   theBets = { }
+   my_weekend = {'gambling object':diceRoll, 'vehicle':myBoat, 'vice':theBets}
+
+
+
+
+.. admonition:: Übung
+
+   Lassen Sie `my_weekend` ausdrucken.
+
+:doc:`top<dictionaries>`
+
+
+JSON und Pyhton-Dictionaries
+----------------------------
+
+Das inzwischen standard Internet-Datenaustausch-Format JSON_ ist ähnelt sehr einer
+Verschachtelung von Python Dictionaries und Listen.
+
+.. code-block:: python
+
+   jsn = {
+	"firstName": "John",
+	"lastName" : "Smith",
+	"age"      : 25,
+	"address"  :
+	{
+	    "streetAddress": "21 2nd Street",
+	    "city"         : "New York",
+	    "state"        : "NY",
+	    "postalCode"   : "10021"
+	},
+	"phoneNumber":
+	[
+	    {
+	      "type"  : "home",
+	      "number": "212 555-1234"
+	    },
+	    {
+	      "type"  : "fax",
+	      "number": "646 555-4567"
+	    }
+	]
+    }
+
+
+Die genaue Entsprechung zwischen JSON und verschachtelten Python-Dictionaries liefert das Modul :py:mod:`json` der Python-Standard-Bibliothek.
+
+
+.. _itmaybeahack: http://www.itmaybeahack.com/book/python-2.6/html/p02/p02c05_maps.html
+
+.. _JSON: http://en.wikipedia.org/wiki/JSON

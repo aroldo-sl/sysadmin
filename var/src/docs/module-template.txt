@@ -1,0 +1,29 @@
+.. file:  module-template.txt
+
+.. date:  2012-07-30
+
+.. author: Aroldo Souza-Leite
+
+
+A recommended module template including pytest tests
+====================================================
+
+TODO: develop the buildout so as to include lb.slog as an available
+egg.
+
+
+The module template
+-------------------
+
+See example `examples.module_template`
+
+.. automodule:: examples.module_template
+
+
+The test template
+-----------------
+
+see also example `examples.tests.test_module_template`
+
+
+

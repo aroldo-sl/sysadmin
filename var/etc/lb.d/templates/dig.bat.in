@@ -1,0 +1,7 @@
+echo ""
+echo "buildout eggs directory   :${buildout:eggs-directory}"
+echo "interpreter with main eggs:${app:interpreter}"
+echo "docs interpreter          :${docs:interpreter}"
+echo "sandbox executable        :${sandbox:executable}"
+echo "sandbox real python       :${sandbox:real-python}"
+echo ""

@@ -1,0 +1,8 @@
+<span>
+<ul>
+            <li><a href="./main?section=1">Home</a></li>
+            <li><a href="./main?section=2">Registration</a></li>
+            <li><a href="./main?section=3">Forum</a></li>
+            <li><a href="./main?section=4">Statistics</a></li>
+        </ul>
+</span>

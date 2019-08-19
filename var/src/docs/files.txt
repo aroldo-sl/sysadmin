@@ -1,0 +1,53 @@
+.. file:  files.txt
+
+.. date:  2012-03-19
+
+.. author: Aroldo Souza-Leite
+
+
+Dateien
+=======
+
+
+Über eine Datei iterieren
+-------------------------
+
+
+Wenn nur Zeilen der Reihe nach eingelesen werden, kann eine Datei als ein 
+Iterierbares behandelt werden.
+
+
+.. code-block:: python
+
+   f_in = open('myfile.txt')
+   f_out = open('yourfile.txt', 'w') # w -> overwrite
+   for line i f_in:
+     f_out.write(line)
+   f_out.close()
+   f_in.close()
+
+:doc:`top<files>`
+
+
+Eine ganze Datei einlesen
+-------------------------
+
+Wenn die Zeilen der Datei sortiert oder in ihrer Gesamtheit verarbeitet  werden sollen,
+kann die gesamte Datei als Liste eingelesen werden.
+
+.. code-block:: python
+
+   f_in = open('myfile.txt')
+   lines = f_in.readlines()
+   lines.sort()
+   f_in.close() # f_in wird hier nicht mehr gebraucht
+   f_out = open('yourfile.txt', 'w')
+   f_out.writelines(fi_in)
+   f_out.close()
+
+.. admonition:: Übung
+
+   Lesen Sie die Dokumentation der möglichen Flags (hier wurde nur 'w' für overwrite benutzt) der
+   Funktion :py:func:`open`.
+
+:doc:`top<files>`

@@ -1,0 +1,101 @@
+.. file:  sequences.txt
+
+.. date:  2012-03-19
+
+.. author: Aroldo Souza-Leite
+
+
+Sequenzielle Grunddatentypen
+=============================
+
+Python hat 3 Grunddatentypen, die Daten sequenziell speichern:
+
+
+   - ``str`` (Zeichenketten)
+
+   - ``list`` (Listen)
+
+   - ``tuple`` (Tupel)
+
+
+Der Grunddatentyp ``str``
+-------------------------
+
+.. admonition:: Übung
+
+   Schreiben Sie eine Funktion 'tell' in einem Modul m03_str.py, mit folgenden
+   Eigenschaften:
+
+   - der Name einer Person wird gefragt. Benutzen Sie dafür 
+     die Standard-Funktion :py:func:`raw_input`
+   - der Name der Person wird in großen Buchstaben ausgedruckt
+   - die Gesamtlänge des Namens wird ausgedruckt
+
+
+:doc:`top<sequences>`
+
+Der Grunddatentyp ``list``
+--------------------------
+
+.. admonition:: Übung
+
+
+
+      Schreiben Sie eine Funktion 'tell2' in einem Modul m03_str.py, 
+      wie ``tell``, mit folgenden zusätzlichen Eigenschaften:
+
+	Der Name der Person wird ausgedruckt mit dem letzten Namensteil am
+	Anfang, gefolgt von einem Komma und den restlichen Namensteilen.
+
+	Benutzen Sie dafür die Standard-Funktion :py:obj:`list` um
+	eine Zeichenkette in eine Liste umzuwandeln.
+
+
+	Beachten Sie dieses Beispiel:
+
+	>>> s = 'a b c'
+        >>> s.split(' ') 
+        ['a', 'b', 'c']
+        >>> li = ['currywurst', 'pommes', 'mayo']
+        >>> li[0:-1] # 
+        ['currywurst', 'pommes']
+        >>> li[-1]
+        'mayo'
+        >>>
+
+
+        Benutzen Sie:        
+
+           - die String-Methode  :py:meth:`str.split`
+
+           - die `[]` Syntax für Sequenzen in der offiziellen 
+             Dokumentatin der Sequenzen_ oder in der Tabelle 8.15 von KE [1]_
+
+
+:doc:`top<sequences>`             
+
+Der Grunddatentyp ``tuple``
+---------------------------
+
+.. tip:: ``tuple`` - Objekte haben alle Eigenschaften von ``list`` - Objekte, die das Objekt
+         nicht verändern. ``tuple`` - Objekte sind *immutable objects*.
+
+
+
+:doc:`top<sequences>`
+
+-------------
+
+
+.. [1]  KE
+
+          ::
+           
+             Peter Kaiser, Johannes Ernesti
+             Python
+             Das umfassende Handbuch
+             Galileo Computing, Bonn
+
+
+.. _Sequenzen: http://docs.python.org/library/stdtypes.html#sequence-types-str-unicode-list-tuple-bytearray-buffer-xrange
+

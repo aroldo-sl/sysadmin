@@ -1,0 +1,28 @@
+.. file:  global-todo-list.txt
+
+.. date:  2012-03-17
+
+.. author: Aroldo Souza-Leite
+
+.. _global-todo:
+
+The global TODO list and other documentation development remarks
+================================================================
+
+TODO liste in global-todo-list
+------------------------------
+
+.. todo:: Check the Sphinx pdf output
+
+.. todo:: Choose an html style sheet or theme
+
+.. todo:: Change the title in conf.py
+
+
+
+TODO in all documents
+---------------------
+
+.. todolist::
+
+

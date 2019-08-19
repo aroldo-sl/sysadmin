@@ -1,0 +1,84 @@
+.. file:  interactive.txt
+
+.. date:  2012-03-17
+
+.. author: Aroldo Souza-Leite
+
+
+Der interaktive Modus
+======================
+
+
+
+Der interaktive Interpreter
+----------------------------
+
+Aufruf des interactiven Interpreters:
+
+.. code-block:: bash
+
+   $ python
+
+
+Zu jede Eingabe wird ein Ergebnis zurückgegeben:
+
+>>> 5 + 2
+7
+>>>
+
+
+.. admonition:: Übung
+
+   - Geben sie 7/4 ein (ganzzahlige Division) , und dann 7/4. (Fließkommazahl)
+
+   - Belegen Sie die Variable x mit 'Hallo ' und  y mit 'Welt '. Verketten
+     Sie x mit y.
+
+   - geben Sie ein:
+     
+     - 3>4 
+     - 4<3 
+     - 4==3 
+     - 3==3
+
+
+:doc:`top <interactive>`
+
+
+Arbeiten im interaktiven Interpreter
+-------------------------------------
+
+Der interaktive Interpreter wird genutzt für:
+
+- Rechneraufgaben "mal eben"
+- kleine Tests
+
+:doc:`top <interactive>`
+
+
+
+Die ``print`` Funktion
+----------------------
+
+
+
+Das Python2  ``print`` Statement ist **deprecated**. Epfohlen wird die 
+Python3 ``print`` Funktion.
+
+
+Sie kann in Python2 durch einen besonderen Import-Statement in die Sprachsyntax eingeführt werden:
+
+
+.. code-block:: python
+
+   >>> from __future__ import print_function
+   >>> print('hello ', 'world!')
+   hello  world!
+   >>> 
+
+
+.. note:: In einem Skript muss der Import-Statement aus ``__future__`` der 
+          erste Befehl sein.
+
+
+:doc:`top <interactive>`

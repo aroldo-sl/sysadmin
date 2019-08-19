@@ -1,0 +1,15 @@
+dev
+sys
+run
+proc
+media
+home/aroldo/devel
+home/schlanagenbrut/.local/Schlangenbrut-3.7
+home/lubuntu/.cache
+home/aroldo/.cache
+home/schlangenbrut/.cache
+home/emoritz/.cache
+*~
+*.restic-exclude
+*.rsync-exclude
+*.Trash

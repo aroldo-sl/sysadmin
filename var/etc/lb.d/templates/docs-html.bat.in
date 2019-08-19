@@ -1,0 +1,1 @@
+${docs:interpreter} ${buildout:bin-directory}/sphinx-build -b ${docs-html.bat:builder} -aE  ${docs:source} ${docs:build}

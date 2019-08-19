@@ -1,0 +1,22 @@
+
+This is a template for restructured text editing
+=======================================================
+
+This is a section title
+--------------------------
+
+This is the section text.
+
+.. this is a reStructuredText comment. Don't finish it with double colon (::) .
+   
+
+.. below is a rst special construct:
+   
+:doc:`top<rst-template>`
+
+This is another section title
+---------------------------------
+
+This is the text of another section.
+
+:doc:`top<rst-template>`
