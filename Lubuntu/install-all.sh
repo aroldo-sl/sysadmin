@@ -1,24 +1,28 @@
 #!/bin/bash
 
-echo "Installing basic packages in Lubuntu 18.10"
+echo "Installing basic packages in Lubuntu 19.04"
+apt-get  install -y aptitude
+aptitude install -y build-essential
+aptitude install -y make 
+aptitude install -y llvm 
+aptitude install -y emacs
+aptitude install -y most
+aptitude install -y wget 
+aptitude install -y curl 
+aptitude install -y gnome-system-tools
+aptitude install -y thunderbird
+aptitude install -y chromium-browser
+aptitude install -y git
+aptitude install -y libjpeg8-dev
+aptitude install -y zlib1g-dev
+aptitude install -y dvdbackup
+aptitude install -y libdvdcss2
+aptitude install -y dvdauthor
+aptitude install -y libdvdcss-dev
+aptitude install -y xsel
 
-# apt-get  install -y aptitude
-# aptitude install -y build-essential
-# aptitude install -y make 
-# aptitude install -y llvm 
-# aptitude install -y emacs
-# aptitude install -y most
-# aptitude install -y wget 
-# aptitude install -y curl 
-# aptitude install -y mercurial
-# aptitude install -y mercurial-keyring
-# aptitude install -y gnome-system-tools
-# aptitude install -y thunderbird
-# aptitude install -y chromium-browser
-# aptitude install -y git
-# aptitude install -y libjpeg8-dev
-# aptitude install -y zlib1g-dev
-# aptitude install -y pil
+###### FAILED
+##### aptitude install -y alsamixer
 
 # ############################# Python-3.6
 # aptitude install -y    libssl-dev 
@@ -41,6 +45,8 @@ echo "Installing basic packages in Lubuntu 18.10"
 # aptitude install -y    libxml2-dev
 # aptitude install -y    libxslt-dev
 # aptitude install -y    pandoc
+#################### FAILED
+###### aptitude install -y pil
 # ######## for sip (PyQt5)
 # aptitude install -y flex
 # aptitude install -y bison
@@ -64,19 +70,6 @@ echo "Installing basic packages in Lubuntu 18.10"
 # # aptitude update
 # aptitude install lsb lsb-build-cc
 
-# ############# dvdbackup
-# aptitude install -y dvdbackup
-# aptitude install -y libdvdcss2
-# aptitude install -y dvdauthor
-# ######### failed:aptitude install -y libvdcss-dev
-
-# ############## for Emacs
-# aptitude install -y xsel
-
 
 ###########################
-# aptitude install -y alsamixer
 
-
-#############################
-aptitude install -y chromium-browser
