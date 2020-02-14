@@ -1,6 +1,7 @@
+
 #!/bin/bash
 
-echo "Installing basic packages in Lubuntu 19.04"
+echo "Installing basic packages in Lubuntu 19.10"
 # apt-get  install -y aptitude
 # aptitude install -y build-essential
 # aptitude install -y make 
@@ -20,12 +21,9 @@ echo "Installing basic packages in Lubuntu 19.04"
 # aptitude install -y dvdauthor
 # aptitude install -y libdvdcss-dev
 # aptitude install -y xsel
+# aptitude install -y musescore3
 
 # aptitude install -y fonts-nanum
-
-###### FAILED
-##### aptitude install -y alsamixer
-
 
 # ################# Epson L555
 # apt-get -f install
@@ -34,10 +32,8 @@ echo "Installing basic packages in Lubuntu 19.04"
 # dpkg -i epson-inkjet-printer-201207w_1.0.0-1lsb3.2_amd64.deb
 # aptitude install printer-driver-escpr
 
+###### FAILED
+##### aptitude install -y alsamixer
 
-# #####################
-aptitude install -y musescore3
 
-
-###########################
 
