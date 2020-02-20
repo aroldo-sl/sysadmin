@@ -24,6 +24,7 @@ echo "Installing basic packages in Lubuntu 19.10"
 # aptitude install -y musescore3
 
 # aptitude install -y fonts-nanum
+aptitude install -y pandoc
 
 # ################# Epson L555
 # apt-get -f install
