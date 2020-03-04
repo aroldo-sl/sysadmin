@@ -24,7 +24,10 @@ echo "Installing basic packages in Lubuntu 19.10"
 # aptitude install -y musescore3
 
 # aptitude install -y fonts-nanum
-aptitude install -y pandoc
+# aptitude install -y pandoc
+# apt-add-repository ppa:gnome-terminator
+# aptitude -y install terminator
+aptitude -y install fd-find
 
 # ################# Epson L555
 # apt-get -f install
