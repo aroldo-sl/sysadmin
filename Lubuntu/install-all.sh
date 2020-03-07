@@ -29,8 +29,8 @@ echo "Installing basic packages in Lubuntu 19.10"
 # aptitude -y install terminator
 # aptitude -y install fd-find
 # aptitude -y install locate
-aptitude -y install gedit
-
+# aptitude -y install gedit
+aptitude -y install qalculate
 # ################# Epson L555
 # apt-get -f install
 # aptitude install -y lsb-core
