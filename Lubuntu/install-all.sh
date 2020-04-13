@@ -22,7 +22,7 @@ echo "Installing basic packages in Lubuntu 19.10"
 # aptitude install -y libdvdcss-dev
 # aptitude install -y xsel
 # aptitude install -y musescore3
-
+# aptitude install -y mumble
 # aptitude install -y fonts-nanum
 # aptitude install -y pandoc
 # apt-add-repository ppa:gnome-terminator
@@ -30,7 +30,10 @@ echo "Installing basic packages in Lubuntu 19.10"
 # aptitude -y install fd-find
 # aptitude -y install locate
 # aptitude -y install gedit
-aptitude -y install qalculate
+# aptitude -y install qalculate
+# aptitude install -y software-properties conmon
+# add-apt-repository -y ppa:projectatomic/ppa
+aptitude install -y podman
 # ################# Epson L555
 # apt-get -f install
 # aptitude install -y lsb-core
