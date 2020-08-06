@@ -30,26 +30,29 @@ aptitude -y install locate
 aptitude -y install gedit
 aptitude -y install qalculate
 aptitude install -y gparted
-# ################# Epson L555
+################# Epson L555
 # apt-get -f install
 # aptitude install -y lsb-core
 # aptitude install -y lsb-printing
 # dpkg -i epson-inkjet-printer-201207w_1.0.0-1lsb3.2_amd64.deb
 # aptitude install -y printer-driver-escpr
 
-#######################
-# add-apt-repository -y ppa:projectatomic/ppa
-# apt-add-repository ppa:gnome-terminator
-# aptitude -y install terminator
 
-#####################
+add-apt-repository -y ppa:projectatomic/ppa
+apt-add-repository ppa:gnome-terminator
+aptitude -y install terminator
 
-# aptitude install -y software-properties conmon
-#####
-# aptitude install -y podman
+
+
+aptitude install -y software-properties conmon
+
+aptitude install -y podman
 
 ###### FAILED
 ##### aptitude install -y alsamixer
+add-apt-repository ppa:mkusb/ppa
+aptitude -y update
+apt install --install-recommends mkusb mkusb-nox usb-pack-efi
 
 
 
