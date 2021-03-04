@@ -1,1 +1,0 @@
-python ${serve-debug.bat:py-script} --paster-cmd-location  ${serve-debug.bat:paster-cmd-location}  --inifile-location ${serve-debug.bat:inifile-location}
