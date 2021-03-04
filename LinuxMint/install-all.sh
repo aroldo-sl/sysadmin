@@ -42,16 +42,13 @@
 # apt-add-repository ppa:gnome-terminator
 # aptitude -y install terminator
 
-# aptitude install -y software-properties conmon
-# aptitude install -y podman
-
-
 # aptitude install -y qalculate
+# aptitude -y install vlc
 
 ################# <midori> ######
-apt-add-repository ppa:midori/ppa
-aptitde -y update
-aptitude install -y midori
+# apt-add-repository ppa:midori/ppa
+# aptitde -y update
+# aptitude install -y midori
 ################# </midori> ######
 
 # <fsarchiver> ##################
@@ -83,7 +80,15 @@ aptitude install -y midori
 
 # ################ </fsarchiver> #################
 
+# ################## <podman> #############
 
+aptitude -y install snap
+snap install podman --edge
+#apt install  software-properties-common uidmap
+#add-apt-repository ppa:projectatomic/ppa
+#apt-get update
+##aptitude install -y podman
+# ################# </podman> ############
 
 
 

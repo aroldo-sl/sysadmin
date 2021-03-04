@@ -1,36 +1,10 @@
-apt -y install \
-  vim \
-  curl \
-  gcc \
-  make \
-  cmake \
-  git \
-  btrfs-progs \
-  golang-go \
-  go-md2man \
-  iptables \
-  libassuan-dev \
-  libc6-dev \
-  libdevmapper-dev \
-  libglib2.0-dev \
-  libgpgme-dev \
-  libgpg-error-dev \
-  libostree-dev \
-  libprotobuf-dev \
-  libprotobuf-c-dev \
-  libseccomp-dev \
-  libselinux1-dev \
-  libsystemd-dev \
-  pkg-config \
-  runc \
-  uidmap \
-  libapparmor-dev
+#!/usr/bin/env bash
 
-export GOPATH=~/go
-git clone https://go.googlesource.com/go $GOPATH
-cd $GOPATH
-git checkout tags/go1.10.8  # optional
-cd src
-./all.bash
-export PATH=$GOPATH/bin:$PATH
+#### https://podman.io/getting-started/installation
 
+. /etc/os-release
+echo "deb https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_${VERSION_ID}/ /" | sudo tee /etc/apt/sources.list.d/devel:kubic:libcontainers:stable.list
+curl -L https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_${VERSION_ID}/Release.key | sudo apt-key add -
+sudo apt-get update
+sudo apt-get -y upgrade 
+sudo apt-get -y install podman
