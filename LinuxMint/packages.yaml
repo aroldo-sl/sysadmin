@@ -1,0 +1,15 @@
+---
+#  The LinuxMint complementary packages
+
+packages:
+  -
+    name:       emacs
+    repository: ppa:kelleyk/emacs
+  -
+    name: micro
+    repository: None
+  -
+    name: gnome-sysadmin-tools
+    repository: None
+
+
