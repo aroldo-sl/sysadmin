@@ -16,8 +16,7 @@ import subprocess
 package_items = (
     # (None, "micro"),
     # ("ppa:kelleyk/emacs", "emacs27"),
-    (None, "git"),
-    (None, "gnome-system-tools")
+    # (None, "git"),
     )
 
 def add_apt_repository(repository):
