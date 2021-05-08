@@ -67,6 +67,8 @@ ipython/.ipythonrc.d/profile_default/db/dhist
 ipython/.ipythonrc.d/profile_default/history.sqlite
 *.DEPRECATED*
 
+# [micro]
+log.txt
 
 # [miscellaneous]
 *.orig
