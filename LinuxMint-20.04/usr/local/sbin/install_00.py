@@ -14,18 +14,16 @@ import subprocess
 
 ## package_items = ((repository, package name)),...)
 package_items = (
-    # (None, "micro"),
-    # ("ppa:kelleyk/emacs", "emacs27"),
-    # (None, "git"),
-    # (None, "hypnotix"),
-    # (None, "gnome-system-tools"),
-    # (None, "dissenter"),
-    # (None, "restic"),
-    # (None, "build-essential"),
-    # (None, "python3-virtualenv"),
-    # (None, "pandoc"),
-    # (None, "fuse"),
-    (None, "gparted"),
+    (None, "micro"),
+    ("ppa:kelleyk/emacs", "emacs27"),
+    (None, "git"),
+    (None, "hypnotix"),
+    (None, "gnome-system-tools"),
+    (None, "dissenter"),
+    (None, "build-essential"),
+    (None, "python3-virtualenv"),
+    (None, "pandoc"),
+    (None, "fuse"),
     )
 
 def add_apt_repository(repository):
@@ -39,6 +37,7 @@ def add_apt_repository(repository):
     cmd = "add-apt-repository -y {repository}".format(repository = repository)
     print(cmd)
     output = subprocess.getoutput(cmd)
+    aptitude_update()
     print(output)
 
 def aptitude_install_package(package):
@@ -68,7 +67,6 @@ def install_packages(package_items):
 
 def aptitude_update():
     """
-    Calls aptitude -y update.
     """
     cmd = "aptitude -y update"
     output = subprocess.getoutput(cmd)
