@@ -23,7 +23,9 @@ package_items = (
     # (None, "restic"),
     # (None, "build-essential"),
     # (None, "python3-virtualenv"),
-    (None, "pandoc"),
+    # (None, "pandoc"),
+    # (None, "fuse"),
+    (None, "gparted"),
     )
 
 def add_apt_repository(repository):
