@@ -14,16 +14,17 @@ import subprocess
 
 ## package_items = ((repository, package name)),...)
 package_items = (
-    (None, "micro"),
-    ("ppa:kelleyk/emacs", "emacs27"),
-    (None, "git"),
-    (None, "hypnotix"),
-    (None, "gnome-system-tools"),
-    (None, "dissenter"),
-    (None, "build-essential"),
-    (None, "python3-virtualenv"),
-    (None, "pandoc"),
-    (None, "fuse"),
+    # (None, "micro"),
+    # ("ppa:kelleyk/emacs", "emacs27"),
+    # (None, "git"),
+    # (None, "hypnotix"),
+    # (None, "gnome-system-tools"),
+    # (None, "dissenter"),
+    # (None, "build-essential"),
+    # (None, "python3-virtualenv"),
+    # (None, "pandoc"),
+    # (None, "fuse"),
+    # (None, "python3-venv"),
     )
 
 def add_apt_repository(repository):
