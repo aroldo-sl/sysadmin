@@ -25,6 +25,9 @@ package_items = (
     # (None, "pandoc"),
     # (None, "fuse"),
     # (None, "python3-venv"),
+    # (None, "ffmpeg"),
+    # (None, "mg"),
+    (None, "most"),
     )
 
 def add_apt_repository(repository):
