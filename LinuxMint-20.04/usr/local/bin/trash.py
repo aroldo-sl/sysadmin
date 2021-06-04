@@ -18,8 +18,12 @@ def trash_all(filenames = (), trash_ext=".Trash"):
             print("not found:", filename)
             continue
         filename = os.path.normpath(filename)
-        os.rename(filename,filename + trash_ext)
-        print('trashed:', filename,file=sys.stderr)
+        filename_Trash = filename + trash_ext
+        if os.path.exists(filename_Trash):
+            print("{filename} already trashed.".format(filename=filename) )
+            continue
+        os.rename(filename, filename + trash_ext)
+        print('trashed:', filename, file=sys.stderr)
     return filenames
 
 def _script():
