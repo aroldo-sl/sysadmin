@@ -11,6 +11,7 @@ packages.
 # imports
 import sys
 import subprocess
+from pprint import pprint, pformat
 
 ## package_items = ((repository, package name)),...)
 package_items = (
@@ -28,11 +29,13 @@ package_items = (
     # (None, "ffmpeg"),
     # (None, "mg"),
     # (None, "most"),
-    (None, "direnv"),
+    # (None, "direnv"),
+    (None, "terminator"),
     )
 
 def add_apt_repository(repository):
     """
+
     Calls add-apt-repository on repository if its value
     is not None.
     """
@@ -63,10 +66,11 @@ def install_package_from_repository(repository, package):
     aptitude_install_package(package)
     print()
 
-def install_packages(package_items):
+def install_packages(package_items = package_items):
     """
     items is ((repository,package), ...)
     """
+    pprint(package_items)
     for repository, package in package_items:
         install_package_from_repository(repository,package)
 
