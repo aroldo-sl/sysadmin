@@ -16,6 +16,7 @@ from pprint import pprint, pformat
 ## package_items = ((repository, package name)),...)
 package_items = (
     # (None, "micro"),
+    # (None, "jove"),
     # ("ppa:kelleyk/emacs", "emacs27"),
     # (None, "git"),
     # (None, "hypnotix"),
