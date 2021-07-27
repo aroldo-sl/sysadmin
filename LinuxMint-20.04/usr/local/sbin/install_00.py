@@ -32,6 +32,7 @@ package_items = (
     # (None, "most"),
     # (None, "direnv"),
     # (None, "terminator"),
+    (None, "screen"),
     )
 
 def add_apt_repository(repository):
