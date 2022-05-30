@@ -1,0 +1,22 @@
+# Files excluded from restic backup
+tmp
+backup
+backups
+restic
+Downloads
+/var/log
+/var/lib/NetworkManager/timestamps
+/var/lib/systemd
+/var/spool
+/dev
+/proc
+/sys
+/run
+/media
+/mnt
+*.Trash
+*.DELETEME
+*.bak
+log.txt
+
+
