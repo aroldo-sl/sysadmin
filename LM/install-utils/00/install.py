@@ -137,7 +137,8 @@ def _script():
     Executed if this module is called
     as a script.
     """
-    reinstall_certificates()
+    report_config_sections()
+    # reinstall_certificates()
     # install_packages_from_config_file()
 ##    aptitude_update()
 ##    install_packages_from_config_file(config_filename = "install-00.ini",
