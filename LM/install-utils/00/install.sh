@@ -12,6 +12,6 @@ echo "BEGIN of $this_script"
 echo $(date +"%FT%H-%M-%S") |tee -a $logfile
 cmd="./install.py $@ |tee -a $logfile"
 echo $cmd
-# eval $cmd
+eval $cmd
 echo "END of $this_script"
 echo "logfile: $(realpath $logfile)"
