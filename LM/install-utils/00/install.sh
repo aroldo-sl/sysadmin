@@ -16,7 +16,7 @@ then
        echo "dry-run $cmd"
 else
        echo "running $cmd"
-       # eval $cmd
+       eval $cmd
 fi
 echo "END of $this_script"
 echo "logfile: $(realpath $logfile)"

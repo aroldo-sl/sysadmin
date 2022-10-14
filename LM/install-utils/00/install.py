@@ -137,12 +137,12 @@ def _script():
     Executed if this module is called
     as a script.
     """
-    # report_config_sections()
+    report_config_sections()
     reinstall_certificates()
     aptitude_update()
     install_packages_from_config_file(config_filename = _config_filename,
                                       section_titles=())
 
 if __name__ == "__main__":
-#    _script()
+    _script()
     pass
