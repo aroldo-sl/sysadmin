@@ -11,7 +11,12 @@ logfile="${this_script}.log"
 echo "BEGIN of $this_script"
 echo $(date +"%FT%H-%M-%S") |tee -a $logfile
 cmd="./install.py $@ |tee -a $logfile"
-echo $cmd
-eval $cmd
+if test $1 != "0"
+   then
+       # eval $cmd
+   else
+       echo $cmd
+       echo "dry run"
+fi
 echo "END of $this_script"
 echo "logfile: $(realpath $logfile)"
