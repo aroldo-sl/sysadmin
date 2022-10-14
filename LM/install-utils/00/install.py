@@ -21,7 +21,7 @@ if len(sys.argv) < 2:
 else:
     _config_filename = sys.argv[1]
 ## ## the default line format for printing a report
-_config_line_fmt = "entry {key} has value {value}"
+_config_line_fmt = "{key:<30} from repository {value}"
 
 def read_config_file(config_filename = _config_filename,
                      allow_no_value = True):
@@ -144,5 +144,5 @@ def _script():
                                       section_titles=())
 
 if __name__ == "__main__":
-    _script()
+#    _script()
     pass
