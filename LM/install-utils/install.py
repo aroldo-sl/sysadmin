@@ -107,7 +107,6 @@ def install_package_from_repository(package, repository):
     	aptitude_update()
     aptitude_install_package(package=package)
 
-
 def reinstall_certificates():
     """
     Reinstalls the certificates because of ppa.
