@@ -12,3 +12,6 @@ e (){
     emacsclient -a "" -nw $@
     }
 
+timestamp (){
+    date +"%FT%H-%M-%S"
+}
