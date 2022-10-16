@@ -13,5 +13,5 @@ emoritz (){
     }
 
 timestamp (){
-    date +"%FT%H-%M-%S"
+    date +"%FT%H-%M-%S-%N"
 }
