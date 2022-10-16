@@ -1,0 +1,1 @@
+/home/aroldo/devel/bashmarks/bashmarks.sh
