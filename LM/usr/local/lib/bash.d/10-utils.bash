@@ -9,8 +9,13 @@
 ## A shortcut for emaclient.
 ## Starts the emacs daemon if it ist not up yet.
 emoritz (){
-    emacsclient -a "" -nw $@
-    }
+    if [[ $1 == "" ]]
+       then
+           emacsclient -a "" -nw $(pwd)
+       else
+           emacsclient -a "" $@
+    fi
+ }
 
 timestamp (){
     date +"%FT%H-%M-%S-%N"
