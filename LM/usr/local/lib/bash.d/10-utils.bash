@@ -13,7 +13,7 @@ emoritz (){
        then
            emacsclient -a "" -nw $(pwd)
        else
-           emacsclient -a "" $@
+           emacsclient -a "" -nw $@
     fi
  }
 
