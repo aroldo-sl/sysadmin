@@ -8,7 +8,7 @@
 
 ## A shortcut for emaclient.
 ## Starts the emacs daemon if it ist not up yet.
-e (){
+emoritz (){
     emacsclient -a "" -nw $@
     }
 
