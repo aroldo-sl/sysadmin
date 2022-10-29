@@ -1,8 +1,9 @@
-#! /usr/bin/env python3
-# @file  trash.py
-# @date  2009-12-17
+#!/usr/bin/env python3
+# @file  Trash.py
+# @date  2022-10-29
 # @author Aroldo Souza-Leite
 # @modified 2021-05-08
+# @comment from the old trash.sh
 '''
 Renames filename to filename.Trash
 '''
