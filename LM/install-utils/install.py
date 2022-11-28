@@ -8,6 +8,8 @@
 """
 Adds package repositories and installs Debian
 packages.
+Reads the packages from 'install.ini' or from
+the file given in this script's first command line argument.
 """
 # imports
 import sys

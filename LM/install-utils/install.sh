@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # @file: install-00.sh
 # @date: 2021-05-13
-# @modified: 2021-05-13
-# @comment: Calls install_00.py 
+# @modified: 2022-28-11
+# @comment: Calls install.py 
 this_script=$(realpath $0)
 workdir=$(dirname $this_script)
 cd $workdir
