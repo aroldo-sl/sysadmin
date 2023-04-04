@@ -1,0 +1,22 @@
+#+title:basic-usage.org
+#+date: 2023-04-04T15:11:04
+#+author: Aroldo Souza-Leite
+#+email:  asouzaleite@gmx.de
+#+export_select_tags: export
+#+export_exclude_tags: noexport
+#+startup: showall
+
+
+* Starting wireguard:
+#+BEGIN_SRC bash
+  systemctl start wg-quick@asl-wg0
+#+END_SRC
+* Checking if wireguard is active:
+#+begin_src 
+  systemctl is-active wg-quick@asl-wg0
+#+end_src
+* Stopping wireguard:
+#+begin_src
+  systemctl stop wg-quick@asl-wg0
+#+end_src
+
