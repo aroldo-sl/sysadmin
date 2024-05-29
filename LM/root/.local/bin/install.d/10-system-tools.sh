@@ -4,6 +4,8 @@ gnome-system-tools
 gparted
 restic
 git
+uidmap
+podman
 )
 for package in ${packages[*]}
 do

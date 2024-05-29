@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 packages=(
 terminator
+vimtutor
 )
 for package in ${packages[*]}
 do
