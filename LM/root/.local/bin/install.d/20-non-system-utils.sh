@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 packages=(
-terminator
+    most
+    terminator
 #vimtutor # not found
 #xapp #dependency error
 )
