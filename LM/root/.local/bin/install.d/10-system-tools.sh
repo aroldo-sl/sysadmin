@@ -6,6 +6,7 @@ restic
 git
 uidmap
 podman
+skopeo
 )
 for package in ${packages[*]}
 do
