@@ -1,5 +1,0 @@
-<span tal:define=" logo string:static['mitcon-Logo.jpg']">
-<div align="right">
-<img tal:attributes="src static['mitcon-Logo.jpg']"/>
-</div>
-</span>
