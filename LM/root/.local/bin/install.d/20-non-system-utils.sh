@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
 packages=(
-    most
-    terminator
+#most
+#terminator
 #vimtutor # not found
 #xapp #dependency error
+librsvg2-bin
+pandoc
 )
 for package in ${packages[*]}
 do
