@@ -4,9 +4,12 @@ packages=(
 #terminator
 #vimtutor # not found
 #xapp #dependency error
-librsvg2-bin
-pandoc
+#librsvg2-bin
+#pandoc
+#geany
+qtcreator
 )
+
 for package in ${packages[*]}
 do
 	echo
