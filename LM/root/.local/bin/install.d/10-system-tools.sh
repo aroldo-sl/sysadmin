@@ -3,13 +3,14 @@ packages=(
 # gnome-system-tools
 # gparted
 # restic
+rdiff-backup
 # git
 # uidmap
 # podman
 # skopeo
 # openssh-client
 # openssh-server
-git-extras
+# git-extras
 )
 for package in ${packages[*]}
 do
