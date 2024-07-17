@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 packages=(
 #most
-#terminator
+terminator
 #vimtutor # not found
 #xapp #dependency error
-#librsvg2-bin
-#pandoc
-#geany
+librsvg2-bin
+pandoc
+geany
 qtcreator
 )
 

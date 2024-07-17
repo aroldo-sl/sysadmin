@@ -1,16 +1,16 @@
 #!/usr/bin/env bash
 packages=(
-# gnome-system-tools
-# gparted
-# restic
+gnome-system-tools
+gparted
+restic
 rdiff-backup
-# git
-# uidmap
-# podman
-# skopeo
-# openssh-client
-# openssh-server
-# git-extras
+git
+uidmap
+podman
+skopeo
+openssh-client
+openssh-server
+git-extras
 )
 for package in ${packages[*]}
 do
