@@ -12,6 +12,7 @@ openssh-client
 openssh-server
 git-extras
 stow
+tree
 )
 for package in ${packages[*]}
 do
