@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 packages=(
-#most
+most
 terminator
 #vimtutor # not found
 #xapp #dependency error
@@ -8,6 +8,7 @@ librsvg2-bin
 pandoc
 geany
 qtcreator
+ffmpeg
 )
 
 for package in ${packages[*]}
