@@ -11,16 +11,21 @@ packages=(
     libbz2-dev
     libdb5.3-dev
     libexpat1-dev
+    libffi-dev
     libgc-dev 
     libgdbm-compat-dev 
     libgdbm-dev
+    liblzma-dev
     libmpd-dev
     libncurses5-dev
     libncursesw5-dev
     libreadline-dev
     libreadline6-dev 
     libsqlite3-dev
+    libssl
     libssl-dev
+    libxml2-dev
+    libxmlsec1-dev
     lzma 
     lzma-dev 
     make
@@ -34,8 +39,9 @@ packages=(
     sqlite3
     tk-dev
     uuid-dev
-#   xz #ERROR
+    xz-utils
     zlib1g-dev
+#   xz #ERROR
 )
 
 for package in ${packages[*]}

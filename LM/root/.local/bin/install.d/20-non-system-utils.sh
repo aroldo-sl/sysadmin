@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 packages=(
-most
-terminator
 #vimtutor # not found
 #xapp #dependency error
-librsvg2-bin
-pandoc
-geany
-qtcreator
 ffmpeg
+geany
+librsvg2-bin
+most
+pandoc
+qtcreator
+terminator
 )
 
 for package in ${packages[*]}
