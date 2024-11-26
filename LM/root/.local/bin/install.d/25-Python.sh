@@ -22,8 +22,8 @@ packages=(
     libreadline-dev
     libreadline6-dev 
     libsqlite3-dev
-    libssl
     libssl-dev
+    libssl3
     libxml2-dev
     libxmlsec1-dev
     lzma 
