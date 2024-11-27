@@ -3,6 +3,7 @@ packages=(
         #vimtutor # not found
         #xapp #dependency error
         arp-scan
+        default-jdk
         ffmpeg
         geany
         git
