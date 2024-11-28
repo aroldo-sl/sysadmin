@@ -22,6 +22,7 @@ packages=(
         rdiff-backup
         restic
         skopeo
+        sshfs
         stow
         terminator
         tree
