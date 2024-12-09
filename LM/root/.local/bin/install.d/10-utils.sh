@@ -21,6 +21,7 @@ packages=(
         qtcreator
         rdiff-backup
         restic
+        sshfs
         skopeo
         sshfs
         stow
