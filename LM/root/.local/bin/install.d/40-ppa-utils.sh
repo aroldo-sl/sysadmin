@@ -3,6 +3,7 @@
 ## <add repositories>
 add-apt-repository universe
 add-apt-repository ppa:yannubuntu/boot-repair
+## https://help.ubuntu.com/community/mkusb
 add-apt-repository ppa:mkusb/ppa
 apt update
 ## <add repositories>
