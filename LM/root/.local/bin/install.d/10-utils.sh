@@ -11,7 +11,7 @@ packages=(
         gnome-system-tools
         gparted
         librsvg2-bin
-        members
+        members                   # bluetooth
         most
         nmap
         openssh-client
