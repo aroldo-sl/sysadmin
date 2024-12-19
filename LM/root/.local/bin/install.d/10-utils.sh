@@ -28,6 +28,7 @@ packages=(
         terminator
         tree
         uidmap
+        xclip
 )
 for package in ${packages[*]}
 do
