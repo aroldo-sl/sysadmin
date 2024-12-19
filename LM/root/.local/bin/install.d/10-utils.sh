@@ -28,7 +28,9 @@ packages=(
         terminator
         tree
         uidmap
+        wl-clipboard
         xclip
+        xsel
 )
 for package in ${packages[*]}
 do
