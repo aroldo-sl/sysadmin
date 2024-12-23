@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 packages=(
-        #vimtutor # not found
-        #xapp #dependency error
         arp-scan
         default-jdk
         ffmpeg
