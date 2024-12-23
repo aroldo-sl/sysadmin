@@ -24,6 +24,7 @@ packages=(
     libsqlite3-dev
     libssl-dev
     libssl3
+    libxcb-cursor0
     libxml2-dev
     libxmlsec1-dev
     lzma 
@@ -36,9 +37,13 @@ packages=(
     python3-dev
     python3-tk
     python3-venv
+    qt6-wayland
+    qt6-wayland-dev
+    qt6-wayland-dev-tools
     sqlite3
     tk-dev
     uuid-dev
+    xcb-cursor0
     xz-utils
     zlib1g-dev
 #   xz #ERROR
