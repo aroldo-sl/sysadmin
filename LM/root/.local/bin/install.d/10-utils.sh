@@ -3,6 +3,7 @@ packages=(
         arp-scan
         default-jdk
         ffmpeg
+        fsarchiver
         geany
         git
         git-extras
