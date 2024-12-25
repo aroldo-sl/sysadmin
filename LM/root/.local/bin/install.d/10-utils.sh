@@ -5,7 +5,7 @@ packages=(
         # ffmpeg
         # fsarchiver
         # geany
-          gimp
+        ## gimp
         # git
         # git-extras
         # gnome-system-tools
