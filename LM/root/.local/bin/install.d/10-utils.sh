@@ -4,6 +4,8 @@ packages=(
         # default-jdk
         # ffmpeg
         # fsarchiver
+        guile-3.0    # Gnu Scheme
+        guile-3.0-dev
         # geany
         ## gimp
         # git
