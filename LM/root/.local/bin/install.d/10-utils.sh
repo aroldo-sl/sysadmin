@@ -2,10 +2,11 @@
 packages=(
         # arp-scan
         # default-jdk
+        fd-find   # command: fdfind
         # ffmpeg
         # fsarchiver
-        guile-3.0    # Gnu Scheme
-        guile-3.0-dev
+        # guile-3.0    # Gnu Scheme
+        # guile-3.0-dev
         # geany
         ## gimp
         # git
@@ -23,7 +24,7 @@ packages=(
         # qtcreator
         # rdiff-backup
         # restic
-        scheme9
+        scheme9 # uninstall
         # sshfs
         # skopeo
         # sshfs
