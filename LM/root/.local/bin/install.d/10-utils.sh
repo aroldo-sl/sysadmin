@@ -23,6 +23,7 @@ packages=(
         # qtcreator
         # rdiff-backup
         # restic
+        scheme9
         # sshfs
         # skopeo
         # sshfs
