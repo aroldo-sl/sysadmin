@@ -32,6 +32,7 @@ packages=(
         # terminator
         # tree
         # uidmap
+        vlc
         # wl-clipboard
         # xclip
         # xsel
