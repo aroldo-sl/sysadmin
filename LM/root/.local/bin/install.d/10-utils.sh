@@ -14,6 +14,7 @@ packages=(
         # gnome-system-tools
         # gparted
         # librsvg2-bin
+        libgtk2.0-dev
         # members                   # bluetooth
         # most
         # nmap
