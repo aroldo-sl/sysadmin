@@ -24,6 +24,7 @@ packages=(
     libsqlite3-dev
     libssl-dev
     libssl3
+    libxcb-cursor-dev
     libxcb-cursor0
     libxml2-dev
     libxmlsec1-dev
@@ -43,10 +44,8 @@ packages=(
     sqlite3
     tk-dev
     uuid-dev
-    xcb-cursor0
     xz-utils
     zlib1g-dev
-#   xz #ERROR
 )
 
 for package in ${packages[*]}
