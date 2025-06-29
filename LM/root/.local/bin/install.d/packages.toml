@@ -18,6 +18,7 @@
 "gparted" = ""
 "guile-3.0" = ""  # Gnu Scheme
 "guile-3.0-dev" = ""
+"libssl-dev" = ""
 "libgtk2.0-dev" = ""
 "librsvg2-bin" = ""
 "members" = ""
