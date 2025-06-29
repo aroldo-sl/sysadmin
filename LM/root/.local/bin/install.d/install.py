@@ -1,9 +1,10 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 """
 Installs packages from 'packages.toml'.
 """
 from tomllib import load
 from pprint import pformat
+import subprocess
 
 # # #  [logging]
 def _make_slog():
@@ -47,7 +48,10 @@ def display_data(toml_filename = 'packages.toml'):
     return pretty_data
     
 
-
+def install_package(package_name = "git"):
+    """
+    Installs one deb package.
+    """
 
 
 
