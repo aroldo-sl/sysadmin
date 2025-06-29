@@ -71,6 +71,7 @@ def add_repository_list(repository_list =
     install_package(package_name = "software-properties-common")
     subprocess.run(["apt","update", "-y"])
     for repository_name in repository_list:
+        _slog.debug(f"Adding repository '{repository_name}'.")
         subprocess.run(["add-apt-repository",
                         repository_name, "-y"])
 
@@ -89,8 +90,11 @@ def install_section_packages(toml_filename = "packages.toml",
     """
     data = retrieve_data(toml_filename)
     section = data[section_header]
-    package_names = [package_name for package_name in section \
-                     if section[package_name] == '']
+    repository_list = [repository_name \
+                       for repository_name in section.values()
+                       if not repository_name == ""]
+    add_repository_list(repository_list = repository_list)
+    package_names = section.keys()
     _slog.debug(f"installing section '{section_header}'")
     for package_name in package_names:
         install_package(package_name = package_name)
@@ -106,8 +110,8 @@ def _script():
     Runs if this module is called as a script.
     """
     # test_install_package()
-    # test_install_section_packages()
-    test_add_repository_list()
+    # test_add_repository_list()
+    test_install_section_packages()
 if __name__ == "__main__":
     _script()
 
