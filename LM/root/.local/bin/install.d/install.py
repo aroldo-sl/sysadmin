@@ -62,6 +62,24 @@ def test_install_package():
     """
     install_package()
 
+def add_repository_list(repository_list =
+        ("deb http://gb.archive.ubuntu.com/ubuntu jammy main",)):
+    """
+    Adds new apt repositories from the repository_list.
+    """
+    # because I need 'add-apt-repository'
+    install_package(package_name = "software-properties-common")
+    subprocess.run(["apt","update", "-y"])
+    for repository_name in repository_list:
+        subprocess.run(["add-apt-repository",
+                        repository_name, "-y"])
+
+def test_add_repository_list():
+    """
+    Tests 'add_repository_list'.
+    """
+    add_repository_list()
+                   
 def install_section_packages(toml_filename = "packages.toml",
                              section_header = "general"):
     """
@@ -88,8 +106,8 @@ def _script():
     Runs if this module is called as a script.
     """
     # test_install_package()
-    test_install_section_packages()
-    
+    # test_install_section_packages()
+    test_add_repository_list()
 if __name__ == "__main__":
     _script()
 
