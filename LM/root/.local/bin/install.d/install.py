@@ -104,14 +104,24 @@ def test_install_section_packages():
     Tests install_section_packages.
     """
     install_section_packages(section_header = "Emacs")
-    
+
 def _script():
     """
     Runs if this module is called as a script.
     """
     # test_install_package()
     # test_add_repository_list()
-    test_install_section_packages()
+    # test_install_section_packages()
+    toml_filename ="packages.toml"
+    section_headers = [
+        #"general",
+        #"Emacs",
+        #"Python",
+        ]
+    for section_header in section_headers:
+        install_section_packages(toml_filename = toml_filename,
+                                 section_header = section_header)
+        
 if __name__ == "__main__":
     _script()
 
