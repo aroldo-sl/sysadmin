@@ -53,8 +53,8 @@ def install_package(package_name = "git"):
     Installs one deb package.
     """
     cmd = ["apt", "install", "-y", package_name]
+    _slog.debug(f"installing {package_name}")
     subprocess.run(cmd)
-    _slog.debug(f"installed {package_name}")
 
 def test_install_package():
     """
@@ -62,12 +62,34 @@ def test_install_package():
     """
     install_package()
 
+def install_section_packages(toml_filename = "packages.toml",
+                             section_header = "general"):
+    """
+    Reads the entries from one section and install them
+    if the 'value' is '', that is, if no new package
+    repository has to be added.
+    """
+    data = retrieve_data(toml_filename)
+    section = data[section_header]
+    package_names = [package_name for package_name in section \
+                     if section[package_name] == '']
+    _slog.debug(f"installing section '{section_header}'")
+    for package_name in package_names:
+        install_package(package_name = package_name)
+    
+def test_install_section_packages():
+    """
+    Tests install_section_packages.
+    """
+    install_section_packages(section_header = "Emacs")
+    
 def _script():
     """
     Runs if this module is called as a script.
     """
-    test_install_package()
-
+    # test_install_package()
+    test_install_section_packages()
+    
 if __name__ == "__main__":
     _script()
 
