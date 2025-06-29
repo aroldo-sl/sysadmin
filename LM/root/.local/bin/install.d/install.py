@@ -52,6 +52,23 @@ def install_package(package_name = "git"):
     """
     Installs one deb package.
     """
+    cmd = ["apt", "install", "-y", package_name]
+    subprocess.run(cmd)
+    _slog.debug(f"installed {package_name}")
 
+def test_install_package():
+    """
+    Tests 'install_package'.
+    """
+    install_package()
+
+def _script():
+    """
+    Runs if this module is called as a script.
+    """
+    test_install_package()
+
+if __name__ == "__main__":
+    _script()
 
 
