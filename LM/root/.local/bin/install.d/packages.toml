@@ -88,6 +88,9 @@
 "xz-utils" = ""
 "zlib1g-dev" = ""
 
+[desktop]
+"gnome-clocks" = ""
+
 [Emacs] # ## https://gist.github.com/zoliky/0445b20676bfa85450d7df006066ceb7
 "autoconf" = ""
 "automake" = ""
