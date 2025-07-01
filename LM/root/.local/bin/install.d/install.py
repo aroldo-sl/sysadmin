@@ -116,8 +116,8 @@ def _script():
     section_headers = [
         #"general",
         #"Emacs",
-        #"Python",
-        "desktop",
+        "Python",
+        #"desktop",
         ]
     for section_header in section_headers:
         install_section_packages(toml_filename = toml_filename,
