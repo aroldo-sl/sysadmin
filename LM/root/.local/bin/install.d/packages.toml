@@ -29,7 +29,7 @@
 "openssh-client" = ""
 "openssh-server" = ""
 "pandoc" = ""
-"pkg-config " = ""
+"pkg-config" = ""
 "podman" = ""
 # "qtcreator" = "" # unused
 "rdiff-backup" = ""
