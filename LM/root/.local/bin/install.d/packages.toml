@@ -16,23 +16,26 @@
 "git-extras" = ""
 "gnome-system-tools" = ""
 "gparted" = ""
-"guile-3.0" = ""  # Gnu Scheme
-"guile-3.0-dev" = ""
-# "libssl-dev" = ""
+# "guile-3.0" = ""  # install guile-3.0-dev 
+"guile-3.0-dev" = "" # Gnu scheme
+# "libssl-dev" = "" #[Python]
 "libgtk2.0-dev" = ""
 "librsvg2-bin" = ""
+"libsqlite3-dev" = ""
 "members" = ""
-"mit-scheme" = ""
+# "mit-scheme" = "" #[use Guile instead] 
 "most" = ""
 "nmap" = ""
 "openssh-client" = ""
 "openssh-server" = ""
 "pandoc" = ""
+"pkg-config " = ""
 "podman" = ""
-"qtcreator" = ""
+# "qtcreator" = "" # unused
 "rdiff-backup" = ""
 "restic" = ""
 "skopeo" = ""
+"software-properties-common" = "" # apt-add-repository
 "sshfs" = ""
 "stow" = ""
 "terminator" = ""
@@ -61,7 +64,7 @@
 # "libncursesw5-dev" = ""
 # "libreadline-dev" = ""
 # "libreadline6-dev " = ""
-# "libsqlite3-dev" = ""
+# "libsqlite3-dev" = "" # in [general]
 "libssl-dev" = ""
 # "libssl3" = ""
 # "libxcb-cursor-dev" = ""
@@ -70,26 +73,23 @@
 # "libxmlsec1-dev" = ""
 # "lzma " = ""
 # "lzma-dev" = ""
-# "make" = ""
-# "openssl" = ""
+# "make" = "" # build-essential in [general]
+# "openssl" = "" # [general]
 # "patch" = ""
 # "pkg-config " = ""
 # "python3-cffi " = ""
-# "python3-dev" = ""
-# "python3-tk" = ""
-# "python3-venv" = ""
-# "qt6-wayland" = ""
-"qt6-wayland-dev" = ""
-# "qt6-wayland-dev-tools" = ""
-# "software-properties-common" = ""
+# "python3-dev" = "" # not needed
+# "python3-tk" = ""  # not needed
+# "python3-venv" = "" # not needed
+# "qt6-wayland" = ""  # not yet
+# "qt6-wayland-dev" = "" #not yet
+# "qt6-wayland-dev-tools" = "" #not yet
+# "software-properties-common" = "" # install in [general]
 # "sqlite3" = ""
 "tk-dev" = ""
 # "uuid-dev" = ""
 # "xz-utils" = ""
 # "zlib1g-dev" = ""
-
-[desktop]
-"gnome-clocks" = ""
 
 [Emacs] # ## https://gist.github.com/zoliky/0445b20676bfa85450d7df006066ceb7
 "autoconf" = ""

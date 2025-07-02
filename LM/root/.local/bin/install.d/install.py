@@ -2,9 +2,11 @@
 """
 Installs packages from 'packages.toml'.
 """
+import os
 from tomllib import load
 from pprint import pformat
 import subprocess
+from pathlib import Path
 
 # # #  [logging]
 def _make_slog():
@@ -112,9 +114,15 @@ def _script():
     # test_install_package()
     # test_add_repository_list()
     # test_install_section_packages()
+    __filepath__ = Path(__file__)
+    workdir_path = __filepath__.parent
+    os.chdir(workdir_path)
+    workdir_path = Path.cwd()
+    _slog.info(f"work directory:{workdir_path}")
     toml_filename ="packages.toml"
+    assert Path(toml_filename).resolve() in workdir_path.iterdir(), '"packages.toml" not found'
     section_headers = [
-        #"general",
+        "general",
         #"Emacs",
         "Python",
         #"desktop",
