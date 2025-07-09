@@ -1,12 +1,14 @@
 echo "sourcing usr_local_etc_bash.bashrc"
-export LOCAL_BASH_LIB=/usr/local/lib/bash.d
-if [[ -d $LOCAL_BASH_LIB ]]
+export BASHRC_DIR=/usr/local/etc/bashrc.d
+if [[ -d $BASHRC_DIR ]]
 	then
-		for script in $(ls $LOCAL_BASH_LIB/*.bash)
+		for script in $(ls $BASHRC_DIR/*.bash)
 			do
 				echo "sourcing $script"
 				source $script
 			done
+	else
+		echo "$BASHRC_DIR missing"
 fi
 	
 
