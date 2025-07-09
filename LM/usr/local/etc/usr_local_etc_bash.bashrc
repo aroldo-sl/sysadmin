@@ -1,3 +1,4 @@
+echo "sourcing usr_local_etc_bash.bashrc"
 export LOCAL_BASH_LIB=/usr/local/lib/bash.d
 if [[ -d $LOCAL_BASH_LIB ]]
 	then
