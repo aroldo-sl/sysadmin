@@ -1,2 +1,3 @@
 echo "begining of 00-.bash"
+echo "$(date +'%FT%T')"
 echo "end of 00-.bash"
