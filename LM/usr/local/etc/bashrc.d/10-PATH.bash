@@ -1,11 +1,10 @@
-echo  "beginning of 10-PATH.bash"
-mkdir -p "$HOME/.local/bin"
-HOME_BIN=$HOME/.local/bin
-if ! [[ $PATH =~ :*${HOME_BIN} ]]
+HOME_BIN="$HOME/.local/bin"
+mkdir -p "$HOME_BIN"
+if ! [[ $PATH =~ ^:*${HOME_BIN} ]]
 then
-	export PATH==$HOME_BIN:$PATH
-	echo "$HOME_BIN added to PATH"
+	export PATH="$HOME_BIN:$PATH"
+	echo "$HOME_BIN prepended to PATH"
 else
-	echo "$HOME_BIN already in PATH"
+	echo "$HOME_BIN already in the beginning of PATH"
 fi
-echo "end of 10-PATH.bash"
+echo "PATH=$PATH"
