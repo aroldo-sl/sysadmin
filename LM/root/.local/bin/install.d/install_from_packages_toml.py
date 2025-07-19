@@ -122,8 +122,8 @@ def _script():
     toml_filename ="packages.toml"
     assert Path(toml_filename).resolve() in workdir_path.iterdir(), '"packages.toml" not found'
     section_headers = [
-        #"general",
-        "Emacs",
+        "general",
+        #"Emacs",
         #"Python",
         #"desktop",
         ]
