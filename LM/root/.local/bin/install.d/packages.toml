@@ -19,7 +19,7 @@
 # # "guile-3.0" = ""  # install guile-3.0-dev 
 # "guile-3.0-dev" = "" # Gnu scheme
 # # "libssl-dev" = "" #[Python]
-"gpm" = "" # generalized mouse interface
+# "gpm" = "" # generalized mouse interface
 # "libgtk2.0-dev" = ""
 # "librsvg2-bin" = ""
 # "libsqlite3-dev" = ""
@@ -46,13 +46,14 @@
 # "wl-clipboard" = ""
 # "xclip" = ""
 # "xsel" = ""
+# "dupeguru" = ""
 
 [Python]
 # "bzip2" = ""
 # "gcc" = ""
 # "gdb" = ""
 # "lcov" = ""
-"libbz2-dev" = ""
+# "libbz2-dev" = ""
 # "libdb5.3-dev" = ""
 # "libexpat1-dev" = ""
 # "libffi-dev" = ""
@@ -66,7 +67,7 @@
 # "libreadline-dev" = ""
 # "libreadline6-dev " = ""
 # "libsqlite3-dev" = "" # in [general]
-"libssl-dev" = ""
+# "libssl-dev" = ""
 # "libssl3" = ""
 # "libxcb-cursor-dev" = ""
 # "libxcb-cursor0" = ""
@@ -87,7 +88,7 @@
 # "qt6-wayland-dev-tools" = "" #not yet
 # "software-properties-common" = "" # install in [general]
 # "sqlite3" = ""
-"tk-dev" = ""
+# "tk-dev" = ""
 # "uuid-dev" = ""
 # "xz-utils" = ""
 # "zlib1g-dev" = ""
