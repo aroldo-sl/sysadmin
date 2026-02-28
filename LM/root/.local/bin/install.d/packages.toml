@@ -34,11 +34,13 @@
 # "podman" = ""
 # # "qtcreator" = "" # unused
 # "rdiff-backup" = ""
+"rdfind"=""
 # "restic" = ""
 # "skopeo" = ""
 # "software-properties-common" = "" # apt-add-repository
 # "sshfs" = ""
 # "stow" = ""
+"testdisk" = ""
 # "terminator" = ""
 # "tree" = ""
 # "uidmap" = ""
