@@ -7,6 +7,7 @@
 # "bluetooth" = ""
 # "build-essential" = ""
 # "default-jdk" = ""
+"dconf-editor" = ""
 # "fd-find" = ""  # command: fdfind 
 # "ffmpeg" = ""
 # "fsarchiver" = ""
@@ -34,13 +35,13 @@
 # "podman" = ""
 # # "qtcreator" = "" # unused
 # "rdiff-backup" = ""
-"rdfind"=""
+# "rdfind"=""
 # "restic" = ""
 # "skopeo" = ""
 # "software-properties-common" = "" # apt-add-repository
 # "sshfs" = ""
 # "stow" = ""
-"testdisk" = ""
+# "testdisk" = ""
 # "terminator" = ""
 # "tree" = ""
 # "uidmap" = ""
